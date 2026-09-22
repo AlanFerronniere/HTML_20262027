@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liens et médias</title>
+</head>
+<body>
+<h1 id="titre1">Liens et médias</h1>
+<h2>Liens</h2>
+<p>
+    Les liens se font avec une balise a (comme anchor)
+</p>
+<h3>Lien vers un autre site</h3>
+<a href="https://www.santevet.com/articles/top-10-des-chats-les-plus-mignons">Les chatons mignons</a>
+<br>
+Pour faire propre on va ajouter d'autres attributs facultatifs mais utiles : title et target
+<a href="https://www.santevet.com/articles/top-10-des-chats-les-plus-mignons"
+   title="lien vers un super site de chatons trop mignons"
+    target="_blank">Les chatons mignons</a> <!--target="_blank" sert à ouvrir dans un nouvel onglet-->
+<h3>Liens internes</h3>
+On va exprimer les liens href en chemin "relatif".
+Par exemple : <a href="index.html" title="accueil">Accueil</a>
+<br>On peut exprimer des chemins complexes avec des sous dossier et des ../
+<a href="sousDossier/a.html">Page a</a>
+<h3>Liens vers une ancre dans la même page</h3>
+On fait un lien vers l'id d'une autre balise :
+<a href="#titre1" title="haut de page">Retour au H1</a>
+<h2>Media</h2>
+<h3>Images</h3>
+Avec des balises img avec un attribut src, et un alt
+<br>
+<img src="chaton.jpg" alt="un mignon chaton roux">
+</body>
+</html>
