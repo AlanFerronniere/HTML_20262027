@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Les sélecteurs CSS</title>
+    <link rel="stylesheet" href="03-SelecteursCSS.css">
+</head>
+<body>
+<h1>Les sélecteurs CSS</h1>
+<h2>Sélécteur par balise</h2>
+Utilisons par exemple une balise <b>b</b> pour faire du <b>gras</b>.
+<h2>Sélecteur par classe</h2>
+Pour ne viser qu'un ensemble de balises html, on peut leur attribuer une classe.
+Par exemple :
+<ul>
+    <li>A</li>
+    <li>B</li>
+    <li class="monstyle">C</li>
+    <li class="monstyle">D</li>
+    <li>E</li>
+</ul>
+<h2>Sélecteur par id</h2>
+Pour ne donner du style qu'à une balise <span id="unique">unique</span>
+<h2>Compliquons les choses : les sélecteurs imbriqués</h2>
+<!--ul>li*8>a{Menu $}-->
+<nav id="menu"> <!--balise sémantique pour signaler un menu de navigation-->
+    <ul>
+        <li><a href="#">Menu 1</a></li>
+        <li><a href="#">Menu 2</a></li>
+        <li><a href="#">Menu 3</a></li>
+        <li><a href="#">Menu 4</a></li>
+        <li><a href="#">Menu 5</a></li>
+        <li><a href="#">Menu 6</a></li>
+        <li><a href="#">Menu 7</a></li>
+        <li><a href="#">Menu 8</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>

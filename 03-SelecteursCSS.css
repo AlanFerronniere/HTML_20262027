@@ -1,0 +1,45 @@
+/*Sélecteur par balise*/
+body{
+    font-family: arial;
+    color:blue;
+}
+
+b {
+    color: #3a8b67;
+}
+/*Sélecteur par classe : avec un . devant*/
+.monstyle{
+    color:red;
+}
+/*Sélécteur par id avec un #*/
+#unique{
+    color:violet;
+}
+#menu{
+    background-color: antiquewhite;
+}
+/*Sélecteurs imbriqués*/
+#menu > ul > li > a{ /*avec des > on décrit le chemin précis*/
+    color:black;
+    text-decoration: none;
+}
+#menu a { /* n'importe quel a dans le #menu quel que soir le niveau */
+    text-transform: uppercase;
+}
+/*hover*/
+#menu a:hover{
+    color:green;
+}
+/*pseudo classe utile*/
+#menu > ul > li:first-child { /* le premier li*/
+    list-style-type: kannada;
+}
+#menu > ul > li:last-child { /* le dernier li*/
+    list-style-type: bengali;
+}
+#menu > ul > li:nth-child(3) { /* le 3ème li*/
+    list-style-type: arabic-indic;
+}
+#menu > ul > li:nth-child(2n) { /* 1 sur 2 li*/
+    background-color: silver;
+}
