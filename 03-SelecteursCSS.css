@@ -1,7 +1,12 @@
 /*Sélecteur par balise*/
 body{
-    font-family: arial;
+    font-family: Arial;
     color:blue;
+    font-size: 14px;
+}
+h1{
+    font-size: 2em; /*em : unité relative. Ici 2 fois la taille héritée*/
+    font-family: "Playwrite CA Guides", cursive;
 }
 
 b {
@@ -42,4 +47,10 @@ b {
 }
 #menu > ul > li:nth-child(2n) { /* 1 sur 2 li*/
     background-color: silver;
+}
+/*pseudo élément*/
+h2:after{
+    content:"😎";
+    font-size:.6em;
+
 }

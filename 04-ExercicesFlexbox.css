@@ -1,0 +1,37 @@
+#france{
+    display: flex;
+    width:400px;
+    height:300px;
+    border:1px solid black;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+}
+#france > div:first-child{
+    background-color: blue;
+    flex-grow: 1;
+}
+#france > div:nth-child(2){
+    background-color: white;
+    flex-grow: 1;
+}
+#france > div:last-child{
+    background-color: red;
+    flex-grow: 1;
+}
+
+#japon{
+    display:flex;
+    width:400px;
+    height:300px;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#japon > div{
+    width:150px;
+    height:150px;
+    background-color: red;
+    border-radius: 50%;
+}
