@@ -1,0 +1,73 @@
+body{
+    margin:0; /*enlève la marge par défaut donnée par le navigateur*/
+}
+body > header{
+    background-color: silver;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    position:relative;
+}
+body > header > .logo{
+    font-size: 2em;
+}
+@media(min-width:768px){
+    body>header>.burger{
+        display: none;
+    }
+}
+
+body > header > nav{
+    position:absolute;
+    top:100%;
+    left:0;
+    background-color: grey;
+    display: none;
+    justify-content: stretch;
+    width:100%;
+}
+@media(min-width:768px) {
+    body > header > nav{
+        display: flex;
+        position:relative;
+        width:fit-content;
+    }
+
+}
+body > header > nav.active{
+    display: flex;
+}
+body > header > nav > ul{
+    flex-grow: 1;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin:0;
+    padding:0;
+}
+@media(min-width:768px){
+    body > header > nav > ul{
+        flex-direction: row;
+    }
+}
+
+body > header > nav > ul > li > a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    padding:5px;
+    transition:all ease .3s;
+}
+body > header > nav > ul > li > a:hover{
+    color:red;
+}
+body > header > nav > ul > li:nth-child(2n) > a{
+    background-color: silver;
+}
+body > main {
+    padding:20px;
+}

@@ -1,0 +1,34 @@
+body{
+    margin:0;
+    background-image: url(newyork.jpg);
+    background-size: cover;
+}
+#superchat{
+    max-width: 200px;
+    position: absolute;
+    animation-name: voleDansNY;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes voleDansNY {
+    0%{
+        top:0;
+        left:0;
+        transform: rotate(20deg);
+    }
+    30%{
+        top:20%;
+        left:10%;
+        transform: rotate(40deg);
+    }
+    80%{
+        top:10%;
+        left:60%;
+        transform: rotate(10deg);
+    }
+    100%{
+        top:0;
+        left:0;
+    }
+}

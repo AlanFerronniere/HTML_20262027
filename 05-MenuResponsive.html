@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu Responsive</title>
+    <link rel="stylesheet" href="05-MenuResponsive.css">
+    <script src="https://kit.fontawesome.com/da7397688c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-sharp-duotone fa-regular fa-shield-cat"></i>
+        </div>
+        <div class="burger">
+            <i class="fa-duotone fa-solid fa-bars"></i>
+        </div>
+        <!--nav>ul>li*5>a[href=#]{menu $}-->
+        <nav>
+            <ul>
+                <li><a href="#">menu 1</a></li>
+                <li><a href="#">menu 2</a></li>
+                <li><a href="#">menu 3</a></li>
+                <li><a href="#">menu 4</a></li>
+                <li><a href="#">menu 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contenu de la page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias architecto asperiores culpa enim ex
+            explicabo iste, minus modi molestias mollitia nihil quaerat quam, quasi, sed sequi voluptas. Deserunt,
+            molestias.</p>
+    </main>
+    <script>
+        let baliseNav=document.querySelector("body>header>nav");
+        let burger=document.querySelector("body>header>.burger");
+
+        burger.addEventListener("click", ()=>{
+            baliseNav.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
